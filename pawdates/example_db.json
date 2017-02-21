@@ -1,43 +1,51 @@
 //General DB format
 {
 	"users": {
+		// Multiple dogs per profile
 		"user": {
 			"userId"     : "01110101",
 			"name"       : "Yaboi Nedge",
 			"email"      : "blargh@blargh.net",
 			"pfp"        : "ref to storage?",
-			"owner_type" : "owner",
+			"ownerType"  : "owner",
 			"description": "Blargh",
-			"looking_for": "pawdate",
-			"dogs"       : ["Fido", "Max", "Goofy"],
+			//"looking_for": "pawdate", tab feature
+			"dogs"       : ["Fido", "Max", "Goofy"]
 		}
 	},
 
-	"free_dogs": {
+	"freeDogs": {
+		// Multiple dogs per card
 		"dog": {
-			"owner": "user",
-			"breed": "mutt",
-			"age"  : "4 years",
+			"owner" : "user",
+			"size"  : "med",
+			"breed" : "mutt",
+			"age"   : "4 years",
+			"temper": "mild"
 		}
 	},
 
-	"dogs_for_sale": {
+	"dogsForSale": {
+		// One dog per card
 		"dog": {
 			"breeder"     : "breeder",
 			"breed"       : "little shit",
 			"age"         : "8 months",
+			"temper"      : "mild",
 			"vaccinations": ["vaccinations go here"],
-			"other_stuff" : "goes here"
+			"otherStuff"  : "goes here"
 		}
 	},
 
-	"dogs_for_adoption": {
+	"dogsForAdoption": {
+		// One dog per card
 		"dog": {
 			"shelter": "Happy Tails Shelter",
 			"breed"  : "mutt",
 			"age"    : "8 years",
+			"temper" : "mild",
 			"vaccinations": ["vaccinations go here"],
-			"length_of_stay": "3 months"
+			"lengthOfStay": "3 months"
 		}
 	}
 }
