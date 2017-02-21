@@ -1,7 +1,6 @@
-//General DB format
+
 {
 	"users": {
-		// Multiple dogs per profile
 		"user": {
 			"userId"     : "01110101",
 			"name"       : "Yaboi Nedge",
@@ -9,13 +8,11 @@
 			"pfp"        : "ref to storage?",
 			"ownerType"  : "owner",
 			"description": "Blargh",
-			//"looking_for": "pawdate", tab feature
 			"dogs"       : ["Fido", "Max", "Goofy"]
 		}
 	},
 
 	"freeDogs": {
-		// Multiple dogs per card
 		"dog": {
 			"owner" : "user",
 			"size"  : "med",
@@ -26,7 +23,6 @@
 	},
 
 	"dogsForSale": {
-		// One dog per card
 		"dog": {
 			"breeder"     : "breeder",
 			"breed"       : "little shit",
@@ -38,7 +34,6 @@
 	},
 
 	"dogsForAdoption": {
-		// One dog per card
 		"dog": {
 			"shelter": "Happy Tails Shelter",
 			"breed"  : "mutt",
