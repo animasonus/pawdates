@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card Example</title>
+
+	<style type="text/css">
+		body {
+			/*sets background to gray color*/
+			background-color: #DDDFDF
+		}
+
+		.wrapper {
+			/*gives 35px of space in between
+			  card and window*/
+			padding: 35px;
+		}
+
+		.card {
+			/*I'm not going to go into this.
+			  it's pretty self-explanatory*/
+			width: 170px;
+			height: 250px;
+			padding: 35px;
+			background-color: white;
+		}
+
+		.card_img {
+			/*The max width and height keep
+			  the image inside the card*/
+			max-height: 155px;
+			max-width: 155px;
+			object-position: center top;
+			padding-top: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+		}
+
+		.desc {
+			/*puts the description in the
+			  middle of the box :P*/
+			object-position: center;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div id="card" class="card">
+			<div id="card_img" class="card_img">
+				<!-- Image containing obligatory smug anime girl-->
+				<img src="default.jpg" width="155" height="155">
+			</div>
+			<div id="smug" class="desc"><center>
+				Smug Anime Girl<br>
+				Dogs:<br>
+				[insert dogs here]
+			</center></div>
+		</div>
+	</div>
+
+</body>
+</html>
