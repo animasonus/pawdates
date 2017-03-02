@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PawDates</title>
+        <link rel="stylesheet" type="text/css" href="global.css">
+
+        <!--Firebase Initialization Code. Please don't mess with this.-->
+        <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyD--Nr24BWZcrICe4bd7H3N4MMZe2X2Yl4",
+            authDomain: "pawdates.firebaseapp.com",
+            databaseURL: "https://pawdates.firebaseio.com",
+            storageBucket: "pawdates.appspot.com",
+            messagingSenderId: "919306299503"
+          };
+          firebase.initializeApp(config);
+        </script>
+
+    </head>
+    <body>
+        <header id="masthead" class="row">
+            <div class="logo">
+                <a href="pawdates.firebaseapp.com">
+                    <img src="pics-n-icons/Paw-Heart.png" height="75" width="auto">
+                </a>
+            </div>
+            <nav id="nav-icons">
+                <a href="location.html">
+                    <img src="pics-n-icons/loc.png">
+                </a>
+                <a href="account_settings.html">
+                    <img src="pics-n-icons/gear.png">
+                </a> 
+            </nav>
+            
+        </header>
+
+        <div class="sidebar">
+            <div id="sb_top">
+                <center>Matches</center>
+            </div>
+        </div>
+
+        <div id="profiles">
+            <div class="wrapper">
+                <div id="card" class="card">
+                    <div id="card_img" class="card_img">
+                        <!-- Image containing obligatory smug anime girl-->
+                        <img src="pics-n-icons/default.jpg" width="155" height="155">
+                    </div>
+                    <div id="smug" class="desc"><center>
+                        Smug Anime Girl<br>
+                        Dogs:<br>
+                        [insert dogs here]
+                        <div id="crosstick">
+                            <img src="pics-n-icons/check.png" width="40" height="40" onclick="match()">
+                            <img src="pics-n-icons/x.png" width="40" height="40" onclick="doNotMatch()">
+                        </div>
+                    </center></div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div id="card" class="card">
+                    <div id="card_img" class="card_img">
+                        <!-- Image containing obligatory smug anime girl-->
+                        <img src="pics-n-icons/default.jpg" width="155" height="155">
+                    </div>
+                    <div id="smug" class="desc"><center>
+                        Smug Anime Girl<br>
+                        Dogs:<br>
+                        [insert dogs here]
+                        <div id="crosstick">
+                            <img src="pics-n-icons/check.png" width="40" height="40" onclick="match()">
+                            <img src="pics-n-icons/x.png" width="40" height="40" onclick="doNotMatch()">
+                        </div>
+                    </center></div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div id="card" class="card">
+                    <div id="card_img" class="card_img">
+                        <!-- Image containing obligatory smug anime girl-->
+                        <img src="pics-n-icons/default.jpg" width="155" height="155">
+                    </div>
+                    <div id="smug" class="desc"><center>
+                        Smug Anime Girl<br>
+                        Dogs:<br>
+                        [insert dogs here]
+                        <div id="crosstick">
+                            <img src="pics-n-icons/check.png" width="40" height="40" onclick="match()">
+                            <img src="pics-n-icons/x.png" width="40" height="40" onclick="doNotMatch()">
+                        </div>
+                    </center></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
