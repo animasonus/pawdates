@@ -7,6 +7,7 @@ div {
 }
 
 #profiles {
+	margin-top: 25px;
 	background-color: #DDDFDF;
 }
 
@@ -26,6 +27,18 @@ div {
 	height: 14%;
 }
 
+.pfp {
+	float: right;
+	width: 15%;
+	height: auto;
+}
+
+.pfp img {
+	width: 42%;
+	height: inherit;
+	float: right;
+}
+
 #nav-icons {
 	float: right;
 	padding-right: 8px;
@@ -38,6 +51,7 @@ div {
 
 .sidebar {
 	position: relative;
+	background-image: 
 	margin-top: 8px;
 	padding: 5px;
 	width: 25%;
@@ -45,6 +59,14 @@ div {
 	float: right;
 	background-color: #f9f9f9;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sb-top {
+	width: inherit;
+}
+
+.matches li {
+	padding: 8px 4px 8px 4px;
 }
 
 .wrapper {
