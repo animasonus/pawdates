@@ -1,0 +1,88 @@
+body {
+	background-color: #DDDFDF
+}
+
+div {
+	display: inline-block;
+}
+
+/*Header Stuff*/
+.row {
+	display: block;
+	background-color: white;
+	border-bottom: 1px solid grey;
+	min-width: 100%;
+	height: 80px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+	display: inline-block;
+	background-image: "pics-n-icons/Paw-Heart.png";
+	max-width: auto;
+	height: 80px;
+}
+
+.pfp {
+	float: right;
+	width: 80px;
+	height: 80px;
+}
+
+.pfp img {
+	width: 75px;
+	height: 75px;
+	float: right;
+}
+
+#nav-icons {
+	float: right;
+	padding-right: 8px;
+}
+
+#nav-icons img {
+	height: 25px;
+	max-width: auto;
+}
+
+/*Sidebar Stufffff*/
+.sidebar {
+	position: absolute;
+	right: 8px;
+	top: 85px;
+	/*background-image: */
+	margin-top: 8px;
+	width: 300px;
+	height: 85%;
+	float: right;
+	overflow: auto;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar-header {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	border-bottom: .5px solid grey;
+}
+
+.matches {
+	padding: 0px;
+	margin-top: 0px;
+}
+
+.sidebar-item{
+	display: block;
+	object-position: center;
+	padding: 8px 4px 8px 4px;
+	height: 45px;
+	border-top: .5px solid #DDDFDF;
+	border-bottom: .5px solid grey;
+	margin: auto;
+}
+
+.sidebar-item span {
+	margin: auto;
+	text-align: left;
+}

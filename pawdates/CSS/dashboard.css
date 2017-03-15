@@ -1,0 +1,42 @@
+#profiles {
+	margin-top: 25px;
+	margin-right: 250px;
+	float: left;
+	background-color: #DDDFDF;
+}
+.wrapper {
+	/*gives 35px of space in between
+	  card and window*/
+	padding: 35px;
+	display: inline-block;
+	text-align: center;
+}
+
+.card {
+	/*I'm not going to go into this.
+	  it's pretty self-explanatory*/
+	margin: 1px;
+	width: 170px;
+	height: 250px;
+	padding: 35px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_img {
+	/*The max width and height keep
+	  the image inside the card*/
+	max-height: 155px;
+	max-width: 155px;
+	object-position: center top;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.desc {
+	/*puts the description in the
+	  middle of the box :P*/
+	object-position: center;
+}
