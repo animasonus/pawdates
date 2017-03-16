@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <img src="dogheart.jpg" style="align-self: left; width:3%;">
+    <b>Paw dates</b>
+  </div>
+
+ <div class="container">
+   <div class="login">
+     <section id="left">
+       <form align="center"> <!-- form action="server name" method="post" -->
+         <b> Log In </b><br><br>
+         <div class=“form-input”>
+           Username: <br>
+           <input type=“text” name=“username”>
+         </div>
+         <div class=“form-input”>
+           Password: <br>
+           <input type=“password” name=“password”><br><br>
+           <input type="submit" value="Log In">
+         </div>
+       </div>
+       </form>
+     </section>
+
+   <div class="signup">
+     <section id="right">
+       <form align="center"> <!-- form action="server name" method="post" -->
+         <b>Sign Up</b><br><br>
+         <b>Personal Information</b><br><br>
+         <div class=“form-input”>
+           First Name:
+           <input type=“text” name=“firstname”>
+           Last Name:
+            <input type=“text” name=“lastname”>
+         </div><br>
+          <div class=“form-input”>
+            E-mail address: <br>
+            <input type=“email” name=“emailad”>
+         </div>
+          <div class=“form-input”>
+            Username: <br>
+            <input type=“text” name=“username”>
+         </div>
+          <div class=“form-input”>
+            Password: <br>
+            <input type=“password” name=“password”><br><br>
+            <input type="submit" value="Sign Up!">
+         </div><br><br><br>
+       </form>
+     </section>
+   </div>
+ </div>
+
+</body>
+
+</html>
