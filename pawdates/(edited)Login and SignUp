@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <img src="pawheart.png" style="align-self: left; width:4%;">
+    <b>Paw dates</b>
+  </div>
+
+ <div class="container">
+   <div class="login">
+     <section id="left">
+       <form align="center"> <!-- form action="server name" method="post" -->
+         <h1> Log In </h1><br><br>
+         <div class=“form-input”>
+
+           <input type=“text” name=“username” placeholder="Username">
+         </div>
+         <br>
+         <div class=“form-input”>
+
+           <input type="password" name=“password” placeholder="Password"><br><br>
+           <input type="submit" value="Log In">
+         </div>
+       </div>
+       </form>
+     </section>
+  <div style="border-left:medium rgba(255, 255, 230,0.7) solid; position:absolute; left:50%; height:100%;">
+
+  </div>
+
+   <div class="signup">
+     <section id="right">
+       <form align="center"> <!-- form action="server name" method="post" -->
+         <h2 style="font-family:Arial, Helvetica, sans-serif">Sign Up</h2>
+         <div class=“form-input”>
+           <input type=“text” name=“firstname” placeholder="First name">
+           <input type=“text” name=“lastname” placeholder="Last name">
+         </div><br>
+          <div class=“form-input”>
+            <input type=“email” name=“emailad” placeholder="E-mail address">
+         </div> <br>
+          <div class=“form-input”>
+            <input type=“text” name=“username” placeholder="Username">
+         </div><br>
+          <div class=“form-input”>
+            <input type="password" name=“password” placeholder="Password">
+          </div><br>
+          <div class=“form-input”>
+            <input type="password" name="confirmpswrd" placeholder="Confirm password">
+          </div>
+            <br>
+            <input type="submit" value="Sign Up!">
+         </div><br><br><br>
+       </form>
+     </section>
+   </div>
+ </div>
+
+</body>
+
+</html>
