@@ -1,0 +1,74 @@
+.header {
+  background-color: #ffffe6;
+  margin: 0px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 30px;
+  color: red;
+}
+.login{
+  width: 50%;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.setup{
+  width: 50%;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+  font-size: 20px;
+}
+section {
+  max-width: 50%;
+}
+
+input {
+  height: 20px;
+  width: 200px;
+  font-size: 15px;
+}
+section#left {
+  margin-top: 150px;
+  margin-left: 100px;
+  width: 50%;
+  float: left;
+  padding: 20px 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 128,0.7);
+}
+
+section#right {
+  margin-top: 100px;
+  margin-right: 0px;
+  margin-left: 20px;
+  margin-bottom: 500px;
+  width: 50%;
+  float:right;
+  padding-top: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 128,0.7);
+}
+
+body{
+  margin: auto;
+  background-image: url("colorpaws.png");
+}
+
+.login {
+  background-color: blue;
+}
+
+.signup {
+  background-color: green;
+}
