@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
+  <title>Sign In</title>
+  <link rel="stylesheet" type="text/css" href="CSS/LoginSetUpStyle.css">
+  <link rel="stylesheet" type="text/css" href="CSS/global.css">
 </head>
 
 <body>
-  <div class="header">
-    <img src="pawheart.png" style="align-self: left; width:4%;">
-    <b>Paw dates</b>
-  </div>
+  <header id="masthead" class="row">
+    <div class="logo">
+        <a href="pawdates.firebaseapp.com">
+            <img src="pics-n-icons/Paw-Heart.png" height="80" width="auto">
+        </a>
+    </div>
+    <div class="pfp">
+        <img src="pics-n-icons/default.jpg">
+    </div>
+    <nav id="nav-icons">
+        <a href="location.html">
+            <img src="pics-n-icons/loc.png">
+        </a>
+        <a href="account_settings.html">
+            <img src="pics-n-icons/gear.png">
+        </a> 
+    </nav>  
+  </header>
 
- <div class="container">
-   <div class="login">
+  <div class="login">
      <section id="left">
        <form align="center"> <!-- form action="server name" method="post" -->
          <h1> Log In </h1><br><br>
          <div class=“form-input”>
-
            <input type=“text” name=“username” placeholder="Username">
          </div>
          <br>
@@ -28,9 +42,7 @@
        </div>
        </form>
      </section>
-  <div style="border-left:medium rgba(255, 255, 230,0.7) solid; position:absolute; left:50%; height:100%;">
-
-  </div>
+  <div style="border-left:medium rgba(255, 255, 230,0.7) solid; position:absolute; left:50%; height:100%;"></div>
 
    <div class="signup">
      <section id="right">
@@ -58,7 +70,8 @@
        </form>
      </section>
    </div>
- </div>
+
+   <div class="shortcut"><a href="dashboard.html">Dr. Patterson, click here.</a></div>
 
 </body>
 
