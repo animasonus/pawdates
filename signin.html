@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <link rel="stylesheet" type="text/css" href="CSS/LoginSetUpStyle.css">
+  <link rel="stylesheet" type="text/css" href="CSS/global.css">
+    <script src="pawdates/JS/signIO.js"></script>
+</head>
+
+<body>
+  <header id="masthead" class="row">
+    <div class="logo">
+        <a href="pawdates.firebaseapp.com">
+            <img src="pics-n-icons/Paw-Heart.png" height="80" width="auto">
+        </a>
+    </div>
+    <div class="pfp">
+        <img src="pics-n-icons/default.jpg">
+    </div>
+    <nav id="nav-icons">
+        <a href="location.html">
+            <img src="pics-n-icons/loc.png">
+        </a>
+        <a href="account_settings.html">
+            <img src="pics-n-icons/gear.png">
+        </a> 
+    </nav>  
+  </header>
+
+  <div class="login">
+     <section id="left">
+       <form align="center"> <!-- form action="server name" method="post" -->
+         <h1> Log In </h1><br><br>
+         <div class=“form-input”>
+           <input type=“text” name=“username” placeholder="Username" id="email">
+         </div>
+         <br>
+         <div class=“form-input”>
+
+           <input type="password" name=“password” placeholder="Password" id="password"><br><br>
+           <input onclick="signIn()" type="submit" value="Log In">
+         </div>
+       </div>
+       </form>
+     </section>
+  <div style="border-left:medium rgba(255, 255, 230,0.7) solid; position:absolute; left:50%; height:100%;"></div>
+
+   <div class="signup">
+     <section id="right">
+       <form align="center"> <!-- form action="server name" method="post" -->
+         <h2 style="font-family:Arial, Helvetica, sans-serif">Sign Up</h2>
+         <div class=“form-input”>
+           <input type=“text” name=“firstname” placeholder="First name">
+           <input type=“text” name=“lastname” placeholder="Last name">
+         </div><br>
+          <div class=“form-input”>
+            <input type=“email” name=“emailad” placeholder="E-mail address">
+         </div> <br>
+          <div class=“form-input”>
+            <input type=“text” name=“username” placeholder="Username">
+         </div><br>
+          <div class=“form-input”>
+            <input type="password" name=“password” placeholder="Password">
+          </div><br>
+          <div class=“form-input”>
+            <input type="password" name="confirmpswrd" placeholder="Confirm password">
+          </div>
+            <br>
+            <input type="submit" value="Sign Up!">
+         </div><br><br><br>
+       </form>
+     </section>
+   </div>
+
+   <div class="shortcut"><a href="dashboard.html">Dr. Patterson, click here.</a></div>
+
+</body>
+
+</html>
