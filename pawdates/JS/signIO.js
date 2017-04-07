@@ -1,4 +1,7 @@
-function signIn(email, password) {
+function signIn() {
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+    
 	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
 		var errorCode = error.code;
 		var errormessage = error.message;
@@ -17,6 +20,15 @@ function signIn(email, password) {
 			alert(errorMessage);
 		}
 	});
+
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            window.location.replace('http://pawdates.firebaseapp.com/dashboard.html');
+        } else {
+            window.location.replace('http://pawdates.firebaseapp.com/404.html');
+            // alert("Sorry we could not log you in")
+        }
+    });
 }
 
 function signOut() {

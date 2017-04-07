@@ -9,17 +9,8 @@
 
         <!--Firebase Initialization Code. Please don't mess with this.-->
         <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-        <script>
-          // Initialize Firebase
-          var config = {
-            apiKey: "AIzaSyD--Nr24BWZcrICe4bd7H3N4MMZe2X2Yl4",
-            authDomain: "pawdates.firebaseapp.com",
-            databaseURL: "https://pawdates.firebaseio.com",
-            storageBucket: "pawdates.appspot.com",
-            messagingSenderId: "919306299503"
-          };
-          firebase.initializeApp(config);
-        </script>
+        <script src="JS/fbInit.js"></script>
+        <script src="JS/matchUnmatch.js"></script>
 
     </head>
     <body>
@@ -32,124 +23,47 @@
             <div class="pfp">
                 <img src="pics-n-icons/default.jpg">
             </div>
-            <nav id="nav-icons">
+            <!--<nav id="nav-icons">
                 <a href="location.html">
                     <img src="pics-n-icons/loc.png">
                 </a>
                 <a href="account_settings.html">
                     <img src="pics-n-icons/gear.png">
                 </a> 
-            </nav>
+            </nav>-->
             
         </header>
-
-        <div class="sidebar">
-            <div class="sidebar-header">Matches</div>
-            <ul class="matches">
-                <li class="sidebar-item">
-                    <div id="match_pfp"><img src="pics-n-icons/default_small.jpg"></div>
-                    <span id="match_name">Smug Anime Girl</span>
-                </li>
-                <li class="sidebar-item">
-                    <div id="match_pfp"><img src="pics-n-icons/default_small.jpg"></div>
-                    <span id="match_name">Smug Anime Girl</span>
-                </li>
-                <li class="sidebar-item">
-                    <div id="match_pfp"><img src="pics-n-icons/default_small.jpg"></div>
-                    <span id="match_name">Smug Anime Girl</span>
-                </li>
-                <li class="sidebar-item">
-                    <div id="match_pfp"><img src="pics-n-icons/default_small.jpg"></div>
-                    <span id="match_name">Smug Anime Girl</span>
-                </li>
-                <li class="sidebar-item">
-                    <div id="match_pfp"><img src="pics-n-icons/default_small.jpg"></div>
-                    <span id="match_name">Smug Anime Girl</span>
-                </li>
-            </ul>
-        </div>
-
-        <div id="profiles">
-            <div class="wrapper">
-                <div id="card" class="card">
-                    <div id="card_img" class="card_img">
-                        <img src="pics-n-icons/smug2.jpg" width="155" height="155">
-                    </div>
-                    <div id="smug" class="desc"><center>
-                        Smug Anime Girl<br>
-                        Dogs:<br>
-                        [insert dogs here]<br>
-                        <div id="crosstick">
-                            <img src="pics-n-icons/check.png" width="40" height="40" onclick="match()">
-                        </div>
-                    </center></div>
-                </div>
+        <!-- <div id="pagewrapper" class="pagewrapper"> -->
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-header" id="sidebar-header">Matches</div>
+                <ul class="matches" id="matches">
+                    <li class="sidebar-item" id="sidebar-item">
+                        <div id="match_pfp"><img src="pics-n-icons/default_small.jpg"></div>
+                        <span id="match_name">Smug Anime Girl</span>
+                    </li>
+                </ul>
             </div>
 
-            <div class="wrapper">
-                <div id="card" class="card">
-                    <div id="card_img" class="card_img">
-                        <img src="pics-n-icons/smug3.png" width="155" height="155">
-                    </div>
-                    <div id="smug" class="desc"><center>
-                        Smug Anime Girl 2<br>
-                        Dogs:<br>
-                        [insert dogs here]<br>
-                        <div id="crosstick">
-                            <img src="pics-n-icons/check.png" width="40" height="40" onclick="match()">
+            <div class="profiles" id="profiles">
+                <div onclick="next()" class="yepnope" id="next">
+                    <center><img src="pics-n-icons/x.png"></center>
+                </div>
+                <div class="wrapper">
+                    <div id="card" class="card">
+                        <div id="card_img" class="card_img">
+                            <img src="pics-n-icons/smug2.jpg" width="155" height="155">
                         </div>
-                    </center></div>
+                        <div id="smug" class="desc"><center>
+                            Smug Anime Girl<br>
+                            Dogs:<br>
+                            [insert dogs here]<br>
+                        </center></div>
+                    </div>
+                </div>
+                <div onclick="match()" class="yepnope" id="match">
+                    <center><img src="pics-n-icons/check.png"></center>
                 </div>
             </div>
-
-            <div class="wrapper">
-                <div id="card" class="card">
-                    <div id="card_img" class="card_img">
-                        <img src="pics-n-icons/smug4.jpg" width="155" height="155">
-                    </div>
-                    <div id="smug" class="desc"><center>
-                        Sayaka<br>
-                        Dogs:<br>
-                        [insert dogs here]<br>
-                        <div id="crosstick">
-                            <img src="pics-n-icons/check.png" width="40" height="40" onclick="match()">
-                        </div>
-                    </center></div>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div id="card" class="card">
-                    <div id="card_img" class="card_img">
-                        <img src="pics-n-icons/smug5.png" width="155" height="155">
-                    </div>
-                    <div id="smug" class="desc"><center>
-                        Madoka<br>
-                        Dogs:<br>
-                        [insert dogs here]<br>
-                        <div id="crosstick">
-                            <img src="pics-n-icons/check.png" width="40" height="40" onclick="match()">
-                        </div>
-                    </center></div>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div id="card" class="card">
-                    <div id="card_img" class="card_img">
-                        <img src="pics-n-icons/doge.jpg" width="155" height="155">
-                    </div>
-                    <div id="smug" class="desc"><center>
-                        Doge<br>
-                        Dogs:<br>
-                        Itself<br>
-                        <div id="crosstick">
-                            <img src="pics-n-icons/check.png" width="40" height="40" onclick="match()">
-                        </div>
-                    </center></div>
-                </div>
-            </div>
-        </div>
-
+        <!-- </div> -->
     </body>
 </html>

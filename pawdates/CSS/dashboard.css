@@ -1,15 +1,24 @@
-#profiles {
+.pagewrapper {
+	width: 100%;
+}
+
+.profiles {
+	width: 65%;
+	height: 85%;
 	margin-top: 25px;
-	margin-right: 250px;
-	float: left;
 	background-color: #DDDFDF;
+	float: left;
+	object-position: center;
 }
 .wrapper {
 	/*gives 35px of space in between
 	  card and window*/
 	padding: 35px;
+	width: 35%;
+	height: 100%;
 	display: inline-block;
 	text-align: center;
+	float: left;
 }
 
 .card {
@@ -38,5 +47,21 @@
 .desc {
 	/*puts the description in the
 	  middle of the box :P*/
+	object-position: center;
+}
+
+.yepnope {
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+.yepnope:hover {
+	background-color: rgba(0,0,0,.2);
+}
+
+.yepnope img {
+	width: 35px;
+	height: auto;
 	object-position: center;
 }

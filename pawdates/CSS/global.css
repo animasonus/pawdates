@@ -47,13 +47,10 @@ div {
 
 /*Sidebar Stufffff*/
 .sidebar {
-	position: absolute;
-	right: 8px;
-	top: 85px;
 	/*background-image: */
 	margin-top: 8px;
 	width: 300px;
-	height: 85%;
+	height: 100%;
 	float: right;
 	overflow: auto;
 	background-color: white;
