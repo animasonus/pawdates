@@ -20,6 +20,8 @@ function signIn() {
 			alert(errorMessage);
 		}
 	});
+
+	isUserSignedIn();
 }
 
 function signOut() {
