@@ -1,5 +1,4 @@
 function signIn() {
-	alert("You called a function!");
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     
@@ -21,17 +20,18 @@ function signIn() {
 			alert(errorMessage);
 		}
 	});
-
-    firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-            window.location.replace('http://pawdates.firebaseapp.com/dashboard.html');
-        } else {
-            window.location.replace('http://pawdates.firebaseapp.com/404.html');
-            // alert("Sorry we could not log you in")
-        }
-    });
 }
 
 function signOut() {
 	firebase.auth().signOut();
+}
+
+function isUserSignedIn() {
+	firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            window.location.replace('http://pawdates.firebaseapp.com/dashboard.html');
+        } else {
+            window.location.replace('http://pawdates.firebaseapp.com/404.html');
+        }
+    });
 }
