@@ -1,6 +1,7 @@
 function signIn() {
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
+	alert("You called a function!");
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
     
 	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
 		var errorCode = error.code;
@@ -32,5 +33,5 @@ function signIn() {
 }
 
 function signOut() {
-	firebase.auth().signOut()
+	firebase.auth().signOut();
 }
