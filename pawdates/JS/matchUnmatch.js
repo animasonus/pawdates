@@ -8,6 +8,7 @@
 //to call, uId is needed for both users
 
 function match(userA, userB){
+    next();
     Array.prototype.includes();
     var userAPMatches = firebase.database().ref("users/" + userA + "/p_matches");
     var userBPMatches = firebase.database().ref("users/" + userB + "/p_matches");
