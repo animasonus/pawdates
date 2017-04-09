@@ -1,10 +1,6 @@
 // Firebase database CRUD (Create, Read, Update, Destroy)
 
 function createNewUserData(name, email, password) {
-	// Called by onClick after profile has been verified
-	var user = firebase.auth().currentUser;
-	var uId = user.uid;
-
 	firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
 		var errorCode = error.code;
 		var errorMessage = error.message;
@@ -21,6 +17,8 @@ function createNewUserData(name, email, password) {
 		}
 	});
 
+	var user = firebase.auth().currentUser;
+	var uId = user.uid;
 	var userRef = firebase.database().ref('users');
 	var newUserRef = userRef.push(uId);
 	newUserRef.set({
