@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a852ed20-61d3-4309-b8b3-608d339ba465" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pawdates/Gemfile" afterPath="$PROJECT_DIR$/pawdates/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pawdates/Gemfile.lock" afterPath="$PROJECT_DIR$/pawdates/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pawdates/app/models/user.rb" afterPath="$PROJECT_DIR$/pawdates/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pawdates/db/migrate/20170421112411_add_index_to_users_email.rb" afterPath="$PROJECT_DIR$/pawdates/db/migrate/20170421112411_add_index_to_users_email.rb" />
-    </list>
+    <list default="true" id="a852ed20-61d3-4309-b8b3-608d339ba465" name="Default" comment="" />
     <ignored path="pawdates.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -546,12 +540,12 @@
       <option name="presentableId" value="Default" />
       <updated>1492792458144</updated>
       <workItem from="1492792459298" duration="95000" />
-      <workItem from="1492793581131" duration="11465000" />
+      <workItem from="1492793581131" duration="11852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11560000" />
+    <option name="totallyTimeSpent" value="11947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1040" extended-state="7" />
