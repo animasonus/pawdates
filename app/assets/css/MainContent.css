@@ -1,0 +1,86 @@
+.profiles {
+	width: 500px;
+	height: 600px;
+	margin-top: 200px;
+	margin-left: 200px;
+	background-color: #DDDFDF;
+	float: left;
+	object-position: center;
+}
+.wrapper {
+	/*gives 35px of space in between
+	  card and window*/
+	padding: 35px;
+	width: 35%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	float: left;
+}
+
+.card {
+	/*I'm not going to go into this.
+	  it's pretty self-explanatory*/
+
+	margin-left: 100px;
+	margin-top: 0px;
+	margin-bottom: 100px;
+
+	width: 250px;
+
+
+	padding: 35px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_img {
+	/*The max width and height keep
+	  the image inside the card*/
+
+	max-height: 155px;
+	max-width: 155px;
+	object-position: center top;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 50px;
+}
+
+.desc {
+	/*puts the description in the
+	  middle of the box :P*/
+	object-position: center;
+	height: 800px;
+}
+
+.yepnope {
+	float: left;
+	width: 25%;
+
+}
+.yepnope_match {
+	float: right;
+	margin-right: 0px;
+
+}
+
+.yepnope:hover {
+	background-color: rgba(0,0,0,.2);
+}
+
+.yepnope img {
+	width: 35px;
+	height: auto;
+
+}
+
+.yepnope_match img {
+	width: 35px;
+	height: auto;
+	object-position: right;
+}
+
+.yepnope_match:hover {
+	background-color: rgba(0,0,0,.2);
+}
